@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="Session 5 of 6. Every map you drew this course was already a text file. Indentation is the tree, a text outline diffs where a drag-and-drop file cannot, and a two-by-two for when to render and when to pick up a pen.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="Maps as text - learn mind mapping with phoebe">
+<meta property="og:description" content="Session 5 of 6. Indentation is the map. A moved idea is a moved line, and a diff can see it.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-mind-mapping-with-phoebe/courses/05-maps-as-text.html">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-mind-mapping-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Maps as text - learn mind mapping with phoebe">
+<meta name="twitter:description" content="Session 5 of 6. The outline is the map. Keep the text, render the picture.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-mind-mapping-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Session 5 · Maps as text - learn mind mapping with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-mind-mapping-with-phoebe</a> / Session 5 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn Mind Mapping with Phoebe · Session 5 of 6</div>
+    <h1>Maps as <span class="accent">text</span></h1>
+    <p class="sub">Last session you typed an outline into a box and a map appeared. That was not a trick of the bench. An indented outline and a radial map are the same tree written two ways, and the text way has a property the picture never will: when one idea moves home, one line moves, and a diff can point at it. Tonight is about keeping the text, rendering the picture when readers need one, and knowing when to ignore all of that and draw.</p>
+    <div class="chip-row">
+      <span class="chip level">🟡 Medium</span>
+      <span class="chip audience">Bring your bench outlines</span>
+      <span class="chip audience">Laptop</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · Indentation is the map</span>
+      <span class="a3" style="flex:5">18-40 · Build-along: from paper to text and back</span>
+      <span class="a4" style="flex:1">40-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where we start</h2>
+    </div>
+    <p class="lede">Daybreak's fourteen launch notes have now been a list, five branches, five keyword branches and one clean map with every idea in one home. Four of those shapes exist as text in session 4's bench, which means they can be copied, pasted, compared and kept. The paper map from session 1 cannot do any of those things, and that difference is the whole of tonight.</p>
+
+    <div class="legend">
+      <span class="pill">🎫 Clear all three quiz questions to stamp your passport</span>
+      <span class="pill">Live = presented in the 45 minutes</span>
+      <span class="pill">Self-study = the full depth, after class</span>
+    </div>
+
+    <div class="callout win">
+      <p><strong>★ What you walk out with tonight.</strong> Your maps as indented text you can diff, version and paste into any renderer, plus a one-line rule for when to render from text and when to draw by hand, and the honesty to follow it.</p>
+    </div>
+
+    <div class="callout tip">
+      <p><strong>Syntax lives next door.</strong> The grammar of Mermaid's <span class="mono">mindmap</span> diagram, its node shapes, icons and classes, is <span class="mono">learn-mermaid-with-phoebe</span> session 5, linked below and not repeated here. Tonight uses exactly two lines of it: the word that names the diagram and the root. Everything after that is indentation, and indentation is what you already have.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-1">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers outline grammar</span>
+      <h2>Indentation is the map</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">A tree needs two things written down: what each node says and who its parent is. An indented outline carries both with no symbols at all. The first line is the centre. A line indented two spaces deeper than the one above is its child. A line at the same depth is its sibling. That is the entire grammar, and the bench in session 4 parsed exactly this and nothing more.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="An indented outline on the left and the same tree drawn as a radial map on the right, with arrows from three outline lines to the nodes they become">
+        <style>
+          .s5aH { font: 800 12.5px Inter, sans-serif; fill: #1E4A36; }
+          .s5aB { font: 400 11px Menlo, Consolas, monospace; fill: #14261D; }
+          .s5aD { font: 400 11px Menlo, Consolas, monospace; fill: #B9D8C6; }
+          .s5aN { font: 400 11px Inter, sans-serif; fill: #5F7368; }
+          .s5aW { font: 700 11px Inter, sans-serif; fill: #FFFFFF; }
+          .s5aK { font: 600 10.5px Inter, sans-serif; fill: #14261D; }
+          .s5aE { fill: none; stroke: #CFDCD4; stroke-width: 1.5; }
+          .s5aT { fill: none; stroke: #CFDCD4; stroke-width: 1; }
+          .s5aA { fill: none; stroke: #B85015; stroke-width: 1.4; stroke-dasharray: 4 3; marker-end: url(#s5aArr); }
+        </style>
+        <defs>
+          <marker id="s5aArr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#B85015"/></marker>
+        </defs>
+
+        <rect x="24" y="20" width="360" height="350" rx="12" fill="#FFFFFF" stroke="#DCE7E0"/>
+        <text class="s5aH" x="44" y="46">AS AN OUTLINE</text>
+        <text class="s5aN" x="44" y="64">two spaces per level, first line is the centre</text>
+
+        <rect x="40" y="95" width="336" height="16" rx="4" fill="#FBEFE6"/>
+        <rect x="40" y="111" width="336" height="16" rx="4" fill="#FBEFE6"/>
+        <rect x="40" y="255" width="336" height="16" rx="4" fill="#FBEFE6"/>
+
+        <text class="s5aB" x="44" y="90">Autumn roast launch</text>
+        <text class="s5aD" x="44" y="106">··</text><text class="s5aB" x="62" y="106">Supply</text>
+        <text class="s5aD" x="44" y="122">····</text><text class="s5aB" x="80" y="122">Guji short</text>
+        <text class="s5aD" x="44" y="138">······</text><text class="s5aB" x="98" y="138">Sidamo blend</text>
+        <text class="s5aD" x="44" y="154">····</text><text class="s5aB" x="80" y="154">First batch</text>
+        <text class="s5aD" x="44" y="170">··</text><text class="s5aB" x="62" y="170">Packaging</text>
+        <text class="s5aD" x="44" y="186">····</text><text class="s5aB" x="80" y="186">New sleeve</text>
+        <text class="s5aD" x="44" y="202">····</text><text class="s5aB" x="80" y="202">Legal sign-off</text>
+        <text class="s5aD" x="44" y="218">··</text><text class="s5aB" x="62" y="218">Pricing</text>
+        <text class="s5aD" x="44" y="234">····</text><text class="s5aB" x="80" y="234">Existing: hold</text>
+        <text class="s5aD" x="44" y="250">····</text><text class="s5aB" x="80" y="250">New: seasonal</text>
+        <text class="s5aD" x="44" y="266">··</text><text class="s5aB" x="62" y="266">Comms</text>
+        <text class="s5aD" x="44" y="282">····</text><text class="s5aB" x="80" y="282">Email</text>
+        <text class="s5aD" x="44" y="298">····</text><text class="s5aB" x="80" y="298">Landing page</text>
+        <text class="s5aD" x="44" y="314">··</text><text class="s5aB" x="62" y="314">Ownership</text>
+        <text class="s5aD" x="44" y="330">····</text><text class="s5aB" x="80" y="330">Launch date</text>
+
+        <path class="s5aA" d="M392 102 L434 134"/>
+        <path class="s5aA" d="M392 118 L430 93"/>
+        <path class="s5aA" d="M392 262 L436 300"/>
+
+        <rect x="416" y="20" width="440" height="350" rx="12" fill="#FFFFFF" stroke="#DCE7E0"/>
+        <text class="s5aH" x="436" y="46">AS A MAP</text>
+        <text class="s5aN" x="436" y="64">the same tree, drawn; distance is depth</text>
+
+        <path class="s5aE" d="M660 215 Q580 215 512 136"/>
+        <path class="s5aE" d="M660 215 Q720 160 740 134"/>
+        <path class="s5aE" d="M660 215 Q720 232 766 232"/>
+        <path class="s5aE" d="M660 215 Q560 250 510 302"/>
+        <path class="s5aE" d="M660 230 L660 326"/>
+
+        <rect x="590" y="200" width="140" height="30" rx="10" fill="#1E4A36"/>
+        <text class="s5aW" x="660" y="219" text-anchor="middle">Autumn roast launch</text>
+
+        <rect x="440" y="124" width="72" height="24" rx="8" fill="#2F6B4F"/>
+        <text class="s5aW" x="476" y="140" text-anchor="middle">Supply</text>
+        <path class="s5aT" d="M476 124 L476 104"/>
+        <text class="s5aK" x="436" y="98">Guji short</text>
+        <path class="s5aT" d="M506 92 L536 92"/>
+        <text class="s5aK" x="540" y="96">Sidamo blend</text>
+        <path class="s5aT" d="M476 148 L476 186"/>
+        <text class="s5aK" x="440" y="198">First batch</text>
+
+        <rect x="700" y="110" width="80" height="24" rx="8" fill="#B85015"/>
+        <text class="s5aW" x="740" y="126" text-anchor="middle">Packaging</text>
+        <path class="s5aT" d="M760 110 L760 96"/>
+        <text class="s5aK" x="724" y="92">New sleeve</text>
+        <path class="s5aT" d="M770 134 L776 150"/>
+        <text class="s5aK" x="748" y="164">Legal sign-off</text>
+
+        <rect x="766" y="220" width="70" height="24" rx="8" fill="#4A7F63"/>
+        <text class="s5aW" x="801" y="236" text-anchor="middle">Pricing</text>
+        <path class="s5aT" d="M801 244 L801 258"/>
+        <text class="s5aK" x="748" y="272">Existing: hold</text>
+        <text class="s5aK" x="748" y="292">New: seasonal</text>
+
+        <rect x="440" y="290" width="70" height="24" rx="8" fill="#7A3410"/>
+        <text class="s5aW" x="475" y="306" text-anchor="middle">Comms</text>
+        <path class="s5aT" d="M462 314 L456 330"/>
+        <text class="s5aK" x="436" y="344">Email</text>
+        <path class="s5aT" d="M490 314 L500 330"/>
+        <text class="s5aK" x="478" y="344">Landing page</text>
+
+        <rect x="615" y="326" width="90" height="24" rx="8" fill="#1E4A36"/>
+        <text class="s5aW" x="660" y="342" text-anchor="middle">Ownership</text>
+        <path class="s5aT" d="M705 338 L722 338"/>
+        <text class="s5aK" x="726" y="342">Launch date</text>
+
+        <rect x="24" y="382" width="14" height="14" rx="3" fill="#B85015"/>
+        <text class="s5aN" x="46" y="393">Same tree twice. The left one you can type, diff and paste; the right one you can look at.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - three highlighted lines and the three nodes they become; depth on the left is distance on the right</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Why the outline came first<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>In session 4 you edited a textarea and a map redrew itself. Nobody mentioned that the textarea was the map, because it did not need mentioning: you indented "Guji short" under "Supply" and it appeared on the Supply branch, which is what indenting means. Every map drawn in this course, including the paper one from session 1, was already an outline waiting to be typed.</p>
+        <ul>
+          <li><strong>Line one is the centre.</strong> There is exactly one line at depth zero. Two lines at depth zero is two maps, and the parser will tell you so by drawing a very confused one.</li>
+          <li><strong>Two spaces deeper is a child.</strong> The number is a convention; what matters is that every level is the same step deeper than the last. Mixed tabs and spaces is the commonest reason a map draws wrong.</li>
+          <li><strong>Same depth is a sibling.</strong> "Supply", "Packaging", "Pricing", "Comms" and "Ownership" all sit two spaces in, so they are the five main branches. Move "Comms" four spaces in and it becomes a twig of Pricing, which is a claim about the world you probably did not mean.</li>
+        </ul>
+        <p>The consequence is that the paper map is a rendering, not the source. The source is the tree, and the shortest honest way to write a tree is indentation.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Outline discipline<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>An outline that will be parsed by a machine, or by a colleague six months from now, follows three habits. None of them is about style. Each one removes a way for the tree to be misread.</p>
+        <ul>
+          <li><strong>One idea per line.</strong> "New sleeve, legal sign-off" on one line is one node with two ideas in it, and the bench will count it as one label of four words. Split it and each idea can carry its own twig.</li>
+          <li><strong>Consistent indent.</strong> Pick two spaces and never mix in a tab. Editors show tabs and spaces identically and parsers do not, so a map that looks right in your editor can draw with a branch missing.</li>
+          <li><strong>No trailing sentences.</strong> The keyword rule from session 2 applies to the text exactly as it applied to the page. "Guji short" is a node. "Guji supply is still short so the autumn blend leans on Sidamo" is a sentence that happens to be indented, and it will run off the page when drawn, which session 4's second rung measured at seven labels off the edge.</li>
+        </ul>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p>The Daybreak product manager keeps her supplier maps as plain text in the same folder as the contracts. A colleague once opened one, saw an indented list, and asked where the map was. She pasted it into a renderer and the map appeared. He asked whether he could edit it. She said yes, and that the edit would show up as a changed line when she next looked, which is more than either of them could say about the slide it replaced.</p>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <section class="section" id="part-2">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers version control</span>
+      <h2>A map that diffs</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">Session 4's third and fourth rungs drew almost the same picture. The difference between them was one idea living in two homes versus one, and a single number caught it. As text, the difference is two lines: one removed under Comms, one added under Packaging. A diff shows exactly those two lines. A drag-and-drop tool saves a binary file, and a diff of two binary files says only that they differ.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two panels: a drag-and-drop tool's binary save shown as an opaque block with the question what changed unanswered, and a text outline save shown as a diff with one line removed and one line added">
+        <style>
+          .s5bH { font: 800 12.5px Inter, sans-serif; fill: #1E4A36; }
+          .s5bB { font: 400 11px Menlo, Consolas, monospace; fill: #14261D; }
+          .s5bM { font: 400 11px Menlo, Consolas, monospace; fill: #5F7368; }
+          .s5bP { font: 700 11px Menlo, Consolas, monospace; fill: #7A3410; }
+          .s5bN { font: 400 11px Inter, sans-serif; fill: #5F7368; }
+          .s5bR { font: 700 12px Inter, sans-serif; fill: #7A3410; }
+          .s5bW { font: 700 10.5px Inter, sans-serif; fill: #FFFFFF; }
+        </style>
+
+        <rect x="24" y="20" width="400" height="224" rx="12" fill="#FFFFFF" stroke="#DCE7E0"/>
+        <text class="s5bH" x="44" y="46">A DRAG-AND-DROP TOOL SAVES</text>
+        <text class="s5bN" x="44" y="64">launch-map, saved twice, three days apart</text>
+        <rect x="44" y="84" width="360" height="96" rx="8" fill="#DCE7E0"/>
+        <text class="s5bM" x="60" y="112">01101100 01100001 01110101 01101110 01100011</text>
+        <text class="s5bM" x="60" y="132">01101000 00101101 01101101 01100001 01110000</text>
+        <text class="s5bN" x="60" y="160">the tool can read it; a diff cannot</text>
+        <text class="s5bR" x="44" y="212">What changed between the two saves? Unknown.</text>
+
+        <rect x="448" y="20" width="408" height="224" rx="12" fill="#FFFFFF" stroke="#DCE7E0"/>
+        <text class="s5bH" x="468" y="46">A TEXT OUTLINE SAVES</text>
+        <text class="s5bN" x="468" y="64">the same two saves, as a diff</text>
+        <rect x="460" y="131" width="232" height="16" rx="4" fill="#FBEFE6"/>
+        <rect x="460" y="203" width="232" height="16" rx="4" fill="#EAF4EE"/>
+        <text class="s5bB" x="468" y="88">  Packaging</text>
+        <text class="s5bB" x="468" y="106">    Legal sign-off</text>
+        <text class="s5bB" x="468" y="124">      origin claim</text>
+        <text class="s5bP" x="468" y="142">+     see Comms</text>
+        <text class="s5bB" x="468" y="160">  Comms</text>
+        <text class="s5bB" x="468" y="178">    Landing page</text>
+        <text class="s5bB" x="468" y="196">      20th</text>
+        <text class="s5bM" x="468" y="214" text-decoration="line-through">-     Legal sign-off</text>
+        <path d="M704 210 L704 140" fill="none" stroke="#B85015" stroke-width="1.4" stroke-dasharray="4 3"/>
+        <rect x="716" y="130" width="90" height="20" rx="10" fill="#B85015"/>
+        <text class="s5bW" x="761" y="144" text-anchor="middle">moved home</text>
+        <text class="s5bN" x="716" y="172">one idea, one home,</text>
+        <text class="s5bN" x="716" y="190">two lines in the diff</text>
+
+        <rect x="24" y="262" width="14" height="14" rx="3" fill="#B85015"/>
+        <text class="s5bN" x="46" y="273">Both files changed. Only one of them can say what changed, and it is the one you can read.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - session 4's third rung becoming its fourth, seen as a diff: one line out, one line in</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>What a diff of a map tells you<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A diff is a list of lines removed and lines added between two versions. Run it on two outlines and the operations of the whole course fall out of it as visible edits.</p>
+        <ul>
+          <li><strong>A moved idea is a removed line and an added line</strong> at a different indent. That is the session 3 fix, one home plus a pointer, made checkable by a colleague who was not in the room.</li>
+          <li><strong>A cut to a keyword is a changed line</strong> that got shorter. Twelve words became two; the diff shows both versions side by side and you can decide whether the two still bring back the twelve.</li>
+          <li><strong>A merged branch is a heading removed and its children re-indented.</strong> If the merge was wrong, the diff is the undo button.</li>
+        </ul>
+        <p>Mermaid's <span class="mono">mindmap</span> diagram reads this exact shape. Hierarchy comes from indentation, only relative indentation matters, and bracket shapes around a label pick the node's style. It renders on GitLab, on mermaid.live, in VS Code with a preview extension, and on GitHub inside a fenced block. Two lines above your outline are the whole cost of entry:</p>
+        <div class="prompt-box good"><span class="label">The two-line header</span>mindmap
+  Autumn roast launch
+    Supply
+    Packaging</div>
+        <p>The word names the diagram, the first indented line is the root, and everything beneath it is your outline unchanged. Node shapes, icons, classes and the rest of the grammar are <a href="https://phoebefu6.github.io/learn-mermaid-with-phoebe/courses/05-plans-and-people.html">learn-mermaid-with-phoebe session 5</a>. Markmap does the same job for a Markdown heading-and-list outline; it is named here so you recognise it, not taught.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Per-supplier pages: the map that is regenerated every quarter<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A map that is drawn once and read for years can live as a picture. A map that is redrawn on a schedule cannot, because the redrawing is the expensive part and a picture makes you pay it every time.</p>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p>The Daybreak product manager's nine supplier maps are nine text files, one per supplier, each with the same five branches. Every quarter she updates the twigs that changed: a new backup origin under Supply, a price band under Contract, a payment term that moved. The nine pictures are regenerated from the nine files in one step. When the buying team asks what changed since last quarter, she sends the diff, which is six lines, instead of two pictures and an invitation to spot the difference. The one time a supplier map was maintained as a picture in a drawing tool, the quarterly update took an afternoon and nobody could say afterwards which twigs had moved.</p>
+        </div>
+        <p>The pattern generalises. Anything with a shape that stays constant and content that churns, a project map, a team map, a risk map, wants to be text with a renderer attached. Anything drawn once for one purpose can stay a drawing.</p>
+      </div>
+    </details>
+  </section>
+
+  <section class="section" id="part-3">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · covers render or draw</span>
+      <h2>Render or draw</h2>
+      <span class="tag concept">4 min live</span>
+    </div>
+    <p class="lede">None of this retires the pen. A hand-drawn map is the right tool for thinking, for capturing live, and for a room full of people; a rendered one is the right tool for sharing, versioning and repeating. Two questions settle it: who is going to read this, and how many times will it be made?</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A two-by-two grid: audience for me or for others across the top, frequency once or repeating down the side, with the honest choice of draw or render in each cell">
+        <style>
+          .s5cH { font: 800 12px Inter, sans-serif; fill: #1E4A36; }
+          .s5cT { font: 800 12.5px Inter, sans-serif; fill: #14261D; }
+          .s5cTW { font: 800 12.5px Inter, sans-serif; fill: #FFFFFF; }
+          .s5cB { font: 400 11px Inter, sans-serif; fill: #14261D; }
+          .s5cBW { font: 400 11px Inter, sans-serif; fill: #EAF4EE; }
+          .s5cN { font: 400 11px Inter, sans-serif; fill: #5F7368; }
+        </style>
+
+        <text class="s5cH" x="310" y="46" text-anchor="middle">FOR ME</text>
+        <text class="s5cH" x="662" y="46" text-anchor="middle">FOR OTHERS</text>
+        <text class="s5cH" x="30" y="115">ONCE</text>
+        <text class="s5cH" x="30" y="227">REPEATING</text>
+
+        <rect x="140" y="60" width="340" height="100" rx="10" fill="#EAF4EE" stroke="#B9D8C6"/>
+        <text class="s5cT" x="160" y="90">Draw it</text>
+        <text class="s5cB" x="160" y="112">thinking, capturing live, or in a room</text>
+        <text class="s5cB" x="160" y="132">the drawing is for the hand that drew it</text>
+
+        <rect x="492" y="60" width="340" height="100" rx="10" fill="#2F6B4F"/>
+        <text class="s5cTW" x="512" y="90">Render from text</text>
+        <text class="s5cBW" x="512" y="112">type the outline, render it, send the picture</text>
+        <text class="s5cBW" x="512" y="132">readers get the tidy one; you keep the text</text>
+
+        <rect x="140" y="172" width="340" height="100" rx="10" fill="#B9D8C6"/>
+        <text class="s5cT" x="160" y="202">Type it, keep the text</text>
+        <text class="s5cB" x="160" y="224">you will edit it again; keep the version</text>
+        <text class="s5cB" x="160" y="244">that diffs, and sketch on top when you think</text>
+
+        <rect x="492" y="172" width="340" height="100" rx="10" fill="#1E4A36"/>
+        <text class="s5cTW" x="512" y="202">Render from text, version it</text>
+        <text class="s5cBW" x="512" y="224">regenerate every quarter from the same text</text>
+        <text class="s5cBW" x="512" y="244">the picture is an output, the text the source</text>
+
+        <rect x="30" y="306" width="14" height="14" rx="3" fill="#B85015"/>
+        <text class="s5cN" x="52" y="317">Who reads it and how often decide the tool. Hand for one thinker once; text for readers or repeats.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the only cell that wants a pen and nothing else is the top left, and it is the cell most maps start in</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The hand-drawn map is for the person who drew it<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A map drawn while thinking carries information that never makes it into the tree: the branch you drew first, the twig you crossed out, the arrow you added at the end when two ideas turned out to be one. All of it is legible to you and to nobody else. Send that map to a colleague and they receive the tree with a lot of noise on it.</p>
+        <p>So the split is by audience first. For yourself, draw; the mess is the thinking. For anyone else, type the tree and render it, because a reader wants the tree and only the tree. Then check frequency. Anything you will make again, even for yourself, is worth typing, because the second time you will want to know what changed since the first.</p>
+        <p>The honest failure mode runs the other way too. Rendering a map you are still thinking with makes it look finished before it is, and finished-looking maps stop getting edited. Keep it on paper until the branches stop moving, then type it.</p>
+      </div>
+    </details>
+  </section>
+
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Build-along</span>
+      <h2>From paper to text and back</h2>
+      <span class="tag demo">★ 22 min · everyone types</span>
+    </div>
+    <p class="lede">Your session 1 paper map goes through the whole loop tonight: typed as an outline, measured on the bench, given its two-line header, rendered once, and saved as the file it always was.</p>
+
+    <div class="tick" data-stages="Type it|Bench it|Add the header|Render once|Save the text" data-title="Five passes, from a photo of paper to a file that diffs" data-foot="If a stage feels like retyping, that is the point: the paper map was a rendering and this is the source it never had.">
+      <p class="tick-note" data-stage="0"><b>Type it.</b> Open a plain text editor. First line, the centre. Then each main branch two spaces in, each twig two more. Type what is on the paper, not what you now wish were on it; the fixes come at the next stage where they can be measured.</p>
+      <p class="tick-note" data-stage="1"><b>Bench it.</b> Paste the outline into session 4's bench and read the numbers before you touch anything. Branches, collisions, off-page, shared ideas. Fix the outline until collisions and off-page are zero and every idea has one home, then copy the text back out.</p>
+      <p class="tick-note" data-stage="2"><b>Add the header.</b> Two lines above the outline: the word <span class="mono">mindmap</span>, then the centre indented two spaces. Re-indent everything under it by two more so the root has children. That is all the syntax you need tonight.</p>
+      <p class="tick-note" data-stage="3"><b>Render once.</b> Paste the whole thing into mermaid.live. If a branch is missing, you mixed tabs and spaces or skipped a level. If the picture is right, look at it once, then close it; the picture is not what you are keeping.</p>
+      <p class="tick-note" data-stage="4"><b>Save the text.</b> One file, a plain text extension, in the folder where the meeting's other documents live. Not the PNG. Not a screenshot. The file is the map; the picture can be made again from it whenever anyone asks.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step"><p><strong>Photograph the paper map first</strong>, so you can compare later. A month from now the photo will show you what your hand thought the structure was before the text made you commit to one.</p></div>
+      <div class="step"><p><strong>Type the tree with the paper beside you</strong>, centre first, then one main branch at a time with its twigs before moving to the next. Working branch by branch keeps the indentation honest.</p></div>
+      <div class="step"><p><strong>Paste into <a href="04-the-map-bench.html">session 4's bench</a></strong> and write down all four headline numbers as they come out. If anything is worse than your homework result, the paper was hiding it; the text does not.</p></div>
+      <div class="step"><p><strong>Fix in the text, not in the picture.</strong> Move lines, shorten labels, give the shared idea one home with a pointer. Watch the map follow. Every edit you make here is one the diff will show tomorrow.</p></div>
+      <div class="step"><p><strong>Add the two-line header and render once</strong> at mermaid.live. Everything about how that renderer styles nodes lives in <span class="mono">learn-mermaid-with-phoebe</span>; tonight only cares that the tree came out.</p></div>
+      <div class="step"><p><strong>Save the text file and delete the PNG.</strong> Then reopen the file, move one twig to a different branch, and save again. That is version two, and the difference between the two is now a thing you can show someone.</p></div>
+    </div>
+
+    <div class="callout tip">
+      <p><strong>If you take one thing from tonight.</strong> The picture is a build output. The text is the source. Keep the source, and the picture, the diff, the quarterly update and the bench numbers are all one paste away, forever, in any tool that reads indentation.</p>
+    </div>
+  </section>
+
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Before session 6</h2>
+      <span class="tag exercise">25 min</span>
+    </div>
+    <ol>
+      <li><strong>Type all three of your session 4 homework outlines</strong> into three text files with the two-line header, render each once, and keep only the text. Note how long the third one took compared with the first.</li>
+      <li><strong>Make a version two of one of them</strong> a day later, from memory of what changed in the real project, and compare the two files line by line. Write down what the diff told you that the two pictures would not have.</li>
+      <li><strong>Pick one map you currently keep as a picture</strong>, in a drawing tool or a photo, and decide with the two-by-two whether it should stay that way. One sentence of reasoning, naming the cell.</li>
+      <li><strong>Bring a map you owe somebody.</strong> A plan, a brief, a decision, a revision: session 6 turns one map into the thing it was for, and it needs a real one.</li>
+    </ol>
+  </section>
+
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions</h2>
+    </div>
+    <p>Clear all three and session 5 gets stamped in your passport.</p>
+
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · A colleague pastes their outline into the bench and it reports one main branch, fourteen levels deep. What happened?</p>
+      <button class="qopt" type="button">A · The bench cannot read outlines that long</button>
+      <button class="qopt" type="button">B · Each line was indented deeper than the one before it, so every line became the child of the previous one; indentation is the tree, and the tree they wrote is a chain</button>
+      <button class="qopt" type="button">C · They used Mermaid syntax and the bench needs plain text</button>
+      <button class="qopt" type="button">D · Fourteen ideas need at least two centres</button>
+      <p class="qwhy">The outline has no symbols to get wrong; depth is the only grammar. A line two spaces deeper than the one above is its child, so an outline where every line steps in once is a single chain of parents and children. Put the fourteen lines at the same depth and you get fourteen branches, which is session 4's first rung; group them under five and you get a map.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">2 · Two versions of a map exist, three days apart. Why can a diff explain the change when the map is text and not when it was saved by a drag-and-drop tool?</p>
+      <button class="qopt" type="button">A · Because text files are smaller</button>
+      <button class="qopt" type="button">B · Because drawing tools do not save changes</button>
+      <button class="qopt" type="button">C · Because a diff compares lines, and in a text outline a moved idea is one line removed and one added; a drag-and-drop tool stores a binary file, and two binaries compare as "different" with nothing more to say</button>
+      <button class="qopt" type="button">D · It cannot; maps have to be compared by eye either way</button>
+      <p class="qwhy">The diff of session 4's third rung against its fourth is exactly two lines: "Legal sign-off" removed under Comms, "see Comms" added under Packaging. That is the session 3 fix, readable by someone who was not there. Miro or XMind would save the same change as a new binary blob, and the only honest diff of two blobs is that they are not identical.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · The Daybreak product manager's supplier map is read by the buying team and updated every quarter. A colleague's map of tomorrow's negotiation is for their own eyes and will be thrown away by Friday. Which is which?</p>
+      <button class="qopt" type="button">A · The supplier map is text rendered on demand, because it is for others and repeats; the negotiation map is hand-drawn, because it is for one thinker, once</button>
+      <button class="qopt" type="button">B · Both should be rendered from text; drawing is always the slower option</button>
+      <button class="qopt" type="button">C · Both should be drawn; a rendered map loses the thinking</button>
+      <button class="qopt" type="button">D · The supplier map should be drawn because it matters more</button>
+      <p class="qwhy">Audience first, then frequency. Readers want the tree without the thinker's noise, and anything regenerated on a schedule wants a source you can diff, so the supplier map is text. A map for your own thinking, made once, gains nothing from being typed and loses the crossings-out that were the thinking. Neither answer is about which map matters more.</p>
+    </div>
+
+    <p class="quiz-score"></p>
+  </section>
+
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Sources covered</span>
+      <h2>What this session teaches, and where it came from</h2>
+    </div>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Outline grammar</span><span class="note">First line is the centre, two spaces deeper is a child, same depth is a sibling; the shape session 4's bench parsed</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Mermaid mindmap facts</span><span class="note">Hierarchy from indentation, only relative indentation matters, bracket shapes pick styles; renders on GitLab, mermaid.live, VS Code preview, GitHub fenced block</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Mermaid syntax</span><span class="note">Two lines shown; shapes, icons and classes are learn-mermaid-with-phoebe session 5</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Version control claim</span><span class="note">Text-defined maps diff; drag-and-drop tools such as Miro and XMind store binaries that do not</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Render or draw</span><span class="note">Audience then frequency; hand for one thinker once, text for readers or repeats</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Markmap</span><span class="note">Named as a Markdown-to-map renderer; not taught</span></div>
+    </div>
+    <p class="mono" style="margin-top:14px">Full source map with verification tiers: <span class="mono">materials/official-course-map.md</span>.</p>
+  </section>
+
+  <section class="cheat" id="cheatsheet">
+    <h3>Session 5 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Indentation is the tree</b><span>Line one is the centre. Two spaces deeper is a child.</span></div>
+      <div class="cheat-item"><b>Outline discipline</b><span>One idea per line. Spaces, never tabs. No sentences.</span></div>
+      <div class="cheat-item"><b>A moved idea is two lines</b><span>One removed, one added. The diff shows the fix.</span></div>
+      <div class="cheat-item"><b>Two-line header</b><span>mindmap, then the root. Syntax is learn-mermaid session 5.</span></div>
+      <div class="cheat-item"><b>Binaries do not diff</b><span>Two blobs compare as "different" and nothing more.</span></div>
+      <div class="cheat-item"><b>Render or draw</b><span>For me, once: pen. For others or repeating: text.</span></div>
+    </div>
+  </section>
+
+  <div class="callout next">
+    <span class="nx-pill">Next session</span>
+    <p>You now have a map as a file that diffs. Session 6 asks what it was for. A map plans a meeting, briefs a reader, lays out a decision or tests your memory, and each job has a tell. Then the hand-off: a map has no reading order and readers need one, so when it leaves your desk it becomes an indented outline, and the outline is what ships.</p>
+  </div>
+
+  <footer class="pagefoot">
+    <span>Session 5 of 6 · learn-mind-mapping-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="04-the-map-bench.html">← Prev: The map bench</a> &nbsp;·&nbsp; <a href="06-maps-that-do-work.html">Next: Maps that do work →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

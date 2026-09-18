@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="Six sessions on shaping what you know into a map: one centre, a handful of branches, one keyword each. What the evidence actually says, when a mind map is the wrong tool, and a bench that measures your map off the drawn page. Free, by Phoebe Fu.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="Learn Mind Mapping with Phoebe">
+<meta property="og:description" content="Fourteen meeting notes, nine colliding labels. The same fourteen as a map: five branches, none. Six sessions on the shape, the evidence, and when not to.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-mind-mapping-with-phoebe/">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-mind-mapping-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Learn Mind Mapping with Phoebe">
+<meta name="twitter:description" content="Six sessions on the shape of notes, with a bench that measures your map off the drawn page.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-mind-mapping-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Learn Mind Mapping with Phoebe</title>
+<link rel="stylesheet" href="assets/style.css?v=1">
+<style>
+
+  .stats-row { display: flex; gap: 2.4rem; margin-top: 1.5rem; flex-wrap: wrap; }
+  .stat b { display: block; font-size: 2.1rem; font-weight: 800; line-height: 1.05; font-variant-numeric: tabular-nums; }
+  .stat span { font-size: .72rem; opacity: .85; text-transform: uppercase; letter-spacing: .09em; font-weight: 600; }
+
+  .course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  .course-card {
+    border: 1px solid var(--hairline);
+    border-top: 4px solid var(--diff, var(--indigo));
+    border-radius: var(--radius);
+    padding: 1.2rem 1.3rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-decoration: none;
+    color: var(--ink);
+    background: #fff;
+    transition: box-shadow .15s ease, border-color .15s ease, transform .15s ease;
+    position: relative;
+  }
+  .course-card:hover { border-color: var(--indigo-soft); border-top-color: var(--diff, var(--indigo)); box-shadow: 0 8px 28px rgba(47,107,79,.14); transform: translateY(-3px); }
+  .course-card .cicon { font-size: 1.7rem; line-height: 1; }
+  .course-card .cnum { font-size: .72rem; font-weight: 700; color: var(--indigo); text-transform: uppercase; letter-spacing: .1em; }
+  .course-card h3 { font-size: 1.05rem; font-weight: 800; line-height: 1.3; }
+  .course-card p { font-size: .85rem; color: var(--muted); flex: 1; }
+  .course-card .meta { display: flex; gap: .4rem; flex-wrap: wrap; }
+
+  .diff-legend { display: flex; gap: 1rem; margin-top: 1.6rem; font-size: .74rem; color: var(--muted); font-weight: 600; flex-wrap: wrap; }
+  .diff-legend i { display: inline-block; width: .85rem; height: .35rem; border-radius: 999px; margin-right: .35rem; vertical-align: middle; }
+
+  .paths { margin-top: 2.6rem; }
+  .paths h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .3rem; }
+  .paths .plede { color: var(--muted); font-size: .92rem; margin-bottom: .8rem; }
+  .path { display: flex; gap: .55rem; align-items: center; padding: .75rem 0; border-bottom: .5px solid var(--hairline); flex-wrap: wrap; }
+  .path:last-child { border-bottom: none; }
+  .path b { min-width: 15.5rem; font-size: .9rem; }
+  .path .pstep { background: var(--indigo-50); color: var(--indigo); border-radius: 999px; padding: .16rem .68rem; font-weight: 700; font-size: .8rem; text-decoration: none; transition: all .12s ease; }
+  .path .pstep:hover { background: var(--indigo); color: #fff; }
+  .path .parr { color: var(--faint); font-weight: 700; }
+
+  .mm-section { margin-top: 1.6rem; }
+  .mm-section h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .2rem; }
+  .mm-section .mm-lede { color: var(--muted); font-size: .92rem; margin-bottom: .4rem; }
+  .mm-wrap { border: 1px solid var(--hairline); border-radius: var(--radius); background: linear-gradient(180deg,#fff,#F4F8F5); padding: .6rem; overflow-x: auto; }
+  .mm-svg { width: 100%; height: auto; display: block; max-width: 60rem; margin: 0 auto; min-width: 34rem; }
+  .mm-link { cursor: pointer; text-decoration: none; }
+  .mm-node rect { transition: opacity .15s ease, filter .15s ease; }
+  .mm-node text { pointer-events: none; }
+  .mm-link:hover .mm-node rect { filter: brightness(1.06); }
+  .mm-edge { transition: opacity .15s ease; }
+
+  .not-this { border: 1px solid var(--hairline); border-left: 4px solid var(--amber); border-radius: var(--radius); background: #fff; padding: 1.1rem 1.3rem; margin-top: 1.2rem; }
+  .not-this h3 { font-size: .95rem; font-weight: 800; margin-bottom: .5rem; }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn with Phoebe · Visual Thinking &amp; Storytelling</div>
+    <h1>Learn <span class="accent">Mind Mapping</span> with Phoebe</h1>
+    <p class="sub">Here are the notes from a forty-minute planning meeting: fourteen lines, in the order things were said. Drawn around a centre exactly as written, nine of the fourteen labels land on top of each other. The same fourteen facts sorted into five branches and cut to one keyword each: none collide, and the whole meeting reads at a glance. Six sessions on that shape: what it is, what the research does and does not say about it, when a concept map or a plain list is the honest choice, and a bench that measures your map off the drawn page.</p>
+    <div class="stats-row">
+      <div class="stat"><b data-count="6">6</b><span>sessions</span></div>
+      <div class="stat"><b data-count="14">14</b><span>notes, one meeting</span></div>
+      <div class="stat"><b data-count="9">9</b><span>labels colliding as a list</span></div>
+      <div class="stat"><b data-count="0">0</b><span>as five keyword branches</span></div>
+      <div class="stat"><b data-count="45">45</b><span>min per session</span></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>The six sessions 🎯 <span style="font-size:.85rem;font-weight:600;color:var(--muted)">· one meeting, six shapes</span></h2>
+      <p class="plede">The running situation is <strong>Daybreak's autumn roast launch</strong>: one planning meeting at the coffee-subscription company from the SQL, dataviz and visual-storytelling courses. Fourteen things were said. Every session gives them a different shape, so the only thing that ever changes is what you did with them.</p>
+    </div>
+
+    <div class="course-grid">
+      <a class="course-card" href="courses/01-one-centre-many-branches.html" style="--diff:#7FD8CB">
+        <span class="cicon">🌿</span>
+        <span class="cnum">Session 1 · easy</span>
+        <h3>One centre, many branches</h3>
+        <p>A list is the order things were said. The four parts of a map, Buzan's ten laws read as layout rules rather than brain claims, and the research quoted with both halves of every abstract.</p>
+        <span class="meta"><span class="pill amber">▶ Start here</span></span>
+      </a>
+      <a class="course-card" href="courses/02-keywords-and-the-branch-budget.html" style="--diff:#7FD8CB">
+        <span class="cicon">🔑</span>
+        <span class="cnum">Session 2 · easy</span>
+        <h3>Keywords and the branch budget</h3>
+        <p>Why four and seven are both quoted as the limit and what the argument is really about. One keyword per branch run on real notes, the twig test, and what to do with the ninth branch.</p>
+        <span class="meta"><span class="pill">four or seven</span></span>
+      </a>
+      <a class="course-card" href="courses/03-mind-map-concept-map-or-list.html" style="--diff:#FBBF24">
+        <span class="cicon">🔀</span>
+        <span class="cnum">Session 3 · medium</span>
+        <h3>Mind map, concept map, or list</h3>
+        <p>The cross-link test: an idea that belongs to two branches is telling you which diagram you are drawing. Novak's propositions, Eppler's four formats, and when a plain list is the honest choice.</p>
+        <span class="meta"><span class="pill">one parent or many</span></span>
+      </a>
+      <a class="course-card" href="courses/04-the-map-bench.html" style="--diff:#F87171">
+        <span class="cicon">📏</span>
+        <span class="cnum">Session 4 · bench night</span>
+        <h3>The map bench</h3>
+        <p>One outline, five shapes, nine numbers read off the drawn map: branches, depth, words per node, balance, shared ideas, collisions, off-page labels. Paste your own notes and watch them move.</p>
+        <span class="meta"><span class="pill amber">★ the bench</span></span>
+      </a>
+      <a class="course-card" href="courses/05-maps-as-text.html" style="--diff:#FBBF24">
+        <span class="cicon">📝</span>
+        <span class="cnum">Session 5 · medium</span>
+        <h3>Maps as text</h3>
+        <p>Indentation is the map. Why a text outline diffs, versions and survives the tool that made it, when to render it and when to draw by hand, and the two lines of Mermaid you need.</p>
+        <span class="meta"><span class="pill">outline first</span></span>
+      </a>
+      <a class="course-card" href="courses/06-maps-that-do-work.html" style="--diff:#FB923C">
+        <span class="cicon">🧭</span>
+        <span class="cnum">Session 6 · hands-on</span>
+        <h3>Maps that do work</h3>
+        <p>Planning, briefing, deciding and revising with a map, and the hand-off: a map is where thinking happens, an outline is where it ships. Final scorecard on a map you actually owe somebody.</p>
+        <span class="meta"><span class="pill amber">🔒 final scorecard</span></span>
+      </a>
+    </div>
+
+    <div class="diff-legend">
+      <span><i style="background:#7FD8CB"></i>easy - everyone</span>
+      <span><i style="background:#FBBF24"></i>medium</span>
+      <span><i style="background:#FB923C"></i>hands-on</span>
+      <span><i style="background:#F87171"></i>bench night</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>Your passport 🎫</h2>
+      <p class="plede">Clear all three quiz questions in a session and it gets stamped. Six stamps means your notes stop being a transcript. Stamps live in this browser only.</p>
+    </div>
+    <div class="pp-strip"></div>
+  </section>
+
+  <section class="section">
+    <div class="not-this">
+      <h3>What this course is not, so you land in the right place 🧭</h3>
+      <table class="clean">
+        <tr><th>If your question is</th><th>Go here instead</th></tr>
+        <tr><td>How do I write the Mermaid <span class="mono">mindmap</span> syntax, shapes and icons?</td><td><span class="mono">learn-mermaid-with-phoebe</span> session 5</td></tr>
+        <tr><td>How do I draw icons, containers and lettering while somebody talks?</td><td><span class="mono">learn-sketchnoting-with-phoebe</span></td></tr>
+        <tr><td>Which chart does this question need, and is it honest?</td><td><span class="mono">learn-dataviz-with-phoebe</span></td></tr>
+        <tr><td>The charts are right; how do I turn them into a decision?</td><td><span class="mono">learn-visual-storytelling-with-phoebe</span></td></tr>
+        <tr><td><strong>What goes in the middle, what becomes a branch, and how do I know if it is working?</strong></td><td><strong>you are in the right place</strong></td></tr>
+      </table>
+      <p style="margin-top:.7rem;font-size:.86rem;color:var(--muted)"><strong>Session 5 owns the reasons to keep a map as text, not the grammar.</strong> Syntax lives in the Mermaid course, and two courses owning one grammar disagree with each other eventually.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="paths">
+      <h2>Choose your path 🗺️</h2>
+      <p class="plede">Three doors into the same conviction: a map is the notes moved to where they will be looked for, and the moving is the work.</p>
+      <div class="path"><b>⏱️ I have a meeting tomorrow</b>
+        <a class="pstep" href="courses/01-one-centre-many-branches.html">1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/02-keywords-and-the-branch-budget.html">2</a>
+        <span style="font-size:.82rem;color:var(--muted)">the shape and the two numbers that make it readable</span>
+      </div>
+      <div class="path"><b>🔀 My maps turn into spaghetti</b>
+        <a class="pstep" href="courses/03-mind-map-concept-map-or-list.html">3</a><span class="parr">→</span>
+        <a class="pstep" href="courses/04-the-map-bench.html">4</a><span class="parr">→</span>
+        <a class="pstep" href="courses/05-maps-as-text.html">5</a>
+        <span style="font-size:.82rem;color:var(--muted)">find out which diagram you were drawing, measure it, keep it as text</span>
+      </div>
+      <div class="path"><b>🎯 The whole thing</b>
+        <a class="pstep" href="courses/01-one-centre-many-branches.html">1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/02-keywords-and-the-branch-budget.html">2</a><span class="parr">→</span>
+        <a class="pstep" href="courses/03-mind-map-concept-map-or-list.html">3</a><span class="parr">→</span>
+        <a class="pstep" href="courses/04-the-map-bench.html">4</a><span class="parr">→</span>
+        <a class="pstep" href="courses/05-maps-as-text.html">5</a><span class="parr">→</span>
+        <a class="pstep" href="courses/06-maps-that-do-work.html">6</a>
+        <span style="font-size:.82rem;color:var(--muted)">from a list to a map that does work</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>What is honest here 🧾</h2>
+      <p class="plede">The bench in session 4 reads its numbers off the drawn map. The one-line verdict is a rule of thumb and is labelled as one on the widget. There is no recall model, because the evidence does not support one.</p>
+    </div>
+    <table class="clean">
+      <tr><th>Claim</th><th>Status</th></tr>
+      <tr><td>Branches, depth, words per node, balance, shared ideas</td><td><strong>Really counted</strong> in the parsed outline you can see and edit</td></tr>
+      <tr><td>Labels colliding, labels off the page, smallest label</td><td><strong>Really measured</strong> off the rendered SVG with <span class="mono">getBBox()</span> after it is drawn. If the layout fails, the numbers say so</td></tr>
+      <tr><td>The verdict line</td><td><strong>A heuristic,</strong> labelled as one on the widget. Its two thresholds, four and seven, are the two capacity estimates session 2 teaches side by side</td></tr>
+      <tr><td>"Mind maps improve recall by X"</td><td><strong>Not claimed anywhere.</strong> The research is quoted with both halves of every abstract, including the study whose table disagrees with its own summary</td></tr>
+      <tr><td>Daybreak's meeting</td><td>A teaching situation. The measurement code is real</td></tr>
+    </table>
+  </section>
+
+  <section class="section mm-section">
+    <h2>The knowledge map 🧠</h2>
+    <p class="mm-lede">The whole course at a glance - hover a session to spotlight its concepts, click any node to jump in.</p>
+    <div class="mm-wrap"><div id="mindmap"></div></div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>learn-mind-mapping-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span>Source map, every constant and the bench's honest limits: <span class="mono">materials/official-course-map.md</span></span>
+  </footer>
+
+</main>
+
+<script>
+window.MINDMAP_DATA = {
+  title: "Learn\nMind Mapping",
+  centerColor: "#1E4A36",
+  sessions: [
+    { label: "One centre,\nmany branches", href: "courses/01-one-centre-many-branches.html", color: "#7FD8CB",
+      concepts: [
+        { label: "A list is speaking order", href: "courses/01-one-centre-many-branches.html" },
+        { label: "Ten laws as layout rules", href: "courses/01-one-centre-many-branches.html" },
+        { label: "Quote both halves", href: "courses/01-one-centre-many-branches.html" } ] },
+    { label: "Keywords and\nthe branch budget", href: "courses/02-keywords-and-the-branch-budget.html", color: "#7FD8CB",
+      concepts: [
+        { label: "Four or seven", href: "courses/02-keywords-and-the-branch-budget.html" },
+        { label: "The word that brings it back", href: "courses/02-keywords-and-the-branch-budget.html" },
+        { label: "The ninth branch", href: "courses/02-keywords-and-the-branch-budget.html" } ] },
+    { label: "Mind map, concept\nmap, or list", href: "courses/03-mind-map-concept-map-or-list.html", color: "#FBBF24",
+      concepts: [
+        { label: "The cross-link test", href: "courses/03-mind-map-concept-map-or-list.html" },
+        { label: "Propositions, not branches", href: "courses/03-mind-map-concept-map-or-list.html" },
+        { label: "When a list is honest", href: "courses/03-mind-map-concept-map-or-list.html" } ] },
+    { label: "The map\nbench", href: "courses/04-the-map-bench.html", color: "#F87171",
+      concepts: [
+        { label: "9 collisions down to 0", href: "courses/04-the-map-bench.html" },
+        { label: "Numbers off the drawn map", href: "courses/04-the-map-bench.html" },
+        { label: "Every point its own branch", href: "courses/04-the-map-bench.html" } ] },
+    { label: "Maps\nas text", href: "courses/05-maps-as-text.html", color: "#FBBF24",
+      concepts: [
+        { label: "Indentation is the map", href: "courses/05-maps-as-text.html" },
+        { label: "A map that diffs", href: "courses/05-maps-as-text.html" },
+        { label: "Render or draw", href: "courses/05-maps-as-text.html" } ] },
+    { label: "Maps that\ndo work", href: "courses/06-maps-that-do-work.html", color: "#FB923C",
+      concepts: [
+        { label: "Plan, brief, decide, revise", href: "courses/06-maps-that-do-work.html" },
+        { label: "Map thinks, outline ships", href: "courses/06-maps-that-do-work.html" },
+        { label: "Final scorecard", href: "courses/06-maps-that-do-work.html" } ] }
+  ]
+};
+</script>
+<script src="assets/mindmap.js?v=1"></script>
+<script src="assets/app.js?v=1"></script>
+</body>
+</html>
